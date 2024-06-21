@@ -1,0 +1,15 @@
+.world-container {
+    position: relative;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    pointer-events: none;
+    transform: translate(-50%, -100%);
+    z-index: 10; /* Ensure tooltip is above other elements */
+  }
+  

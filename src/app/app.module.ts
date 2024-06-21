@@ -1,20 +1,19 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; 
 import { AppComponent } from './app.component';
+import { WorldMapComponent } from './Components/world-map/world-map.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WorldMapComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideClientHydration()
-  ],
+    HttpClientModule
+    ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

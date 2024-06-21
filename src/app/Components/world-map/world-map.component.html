@@ -1,0 +1,9 @@
+<h1>World Map</h1>
+<div class="world-container" #svgContainer [innerHTML]="svgContent" (click)="onCountryClick($event)">
+   <!-- SVG map will rendered here -->
+
+   <div *ngIf="hoveredCountryName" class="tooltip">
+      {{ hoveredCountryName }}
+    </div>
+</div>
+
